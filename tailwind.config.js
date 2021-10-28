@@ -5,16 +5,18 @@ module.exports = {
     extend: {
       animation: {
         test: 'test 7s infinite ease-out',
+        wiggle: 'wiggle 10s infinite ease-in-out',
       },
       keyframes: {
-        'fade-in-down': {
+        'wiggle': {
           '0%': {
-            opacity: '0',
-            transform: 'translateY(-10px)',
+            width : 'calc(100% + 1.3px)',
+          },
+          '50%': {
+            width : 'calc(150% + 1.3px)',
           },
           '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
+            width : 'calc(100% + 1.3px)',
           },
         },
         'test': {

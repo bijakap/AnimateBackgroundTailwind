@@ -10045,6 +10045,34 @@ video {
   }
 }
 
+@-webkit-keyframes wiggle {
+  0% {
+    width: calc(100% + 1.3px);
+  }
+
+  50% {
+    width: calc(150% + 1.3px);
+  }
+
+  100% {
+    width: calc(100% + 1.3px);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    width: calc(100% + 1.3px);
+  }
+
+  50% {
+    width: calc(150% + 1.3px);
+  }
+
+  100% {
+    width: calc(100% + 1.3px);
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -10073,6 +10101,11 @@ video {
 .animate-test {
   -webkit-animation: test 7s infinite ease-out;
           animation: test 7s infinite ease-out;
+}
+
+.animate-wiggle {
+  -webkit-animation: wiggle 10s infinite ease-in-out;
+          animation: wiggle 10s infinite ease-in-out;
 }
 
 .cursor-auto {
@@ -41853,6 +41886,11 @@ video {
             animation: test 7s infinite ease-out;
   }
 
+  .sm\:animate-wiggle {
+    -webkit-animation: wiggle 10s infinite ease-in-out;
+            animation: wiggle 10s infinite ease-in-out;
+  }
+
   .sm\:cursor-auto {
     cursor: auto;
   }
@@ -73084,6 +73122,11 @@ video {
   .md\:animate-test {
     -webkit-animation: test 7s infinite ease-out;
             animation: test 7s infinite ease-out;
+  }
+
+  .md\:animate-wiggle {
+    -webkit-animation: wiggle 10s infinite ease-in-out;
+            animation: wiggle 10s infinite ease-in-out;
   }
 
   .md\:cursor-auto {
@@ -104319,6 +104362,11 @@ video {
             animation: test 7s infinite ease-out;
   }
 
+  .lg\:animate-wiggle {
+    -webkit-animation: wiggle 10s infinite ease-in-out;
+            animation: wiggle 10s infinite ease-in-out;
+  }
+
   .lg\:cursor-auto {
     cursor: auto;
   }
@@ -135552,6 +135600,11 @@ video {
             animation: test 7s infinite ease-out;
   }
 
+  .xl\:animate-wiggle {
+    -webkit-animation: wiggle 10s infinite ease-in-out;
+            animation: wiggle 10s infinite ease-in-out;
+  }
+
   .xl\:cursor-auto {
     cursor: auto;
   }
@@ -166783,6 +166836,11 @@ video {
   .\32xl\:animate-test {
     -webkit-animation: test 7s infinite ease-out;
             animation: test 7s infinite ease-out;
+  }
+
+  .\32xl\:animate-wiggle {
+    -webkit-animation: wiggle 10s infinite ease-in-out;
+            animation: wiggle 10s infinite ease-in-out;
   }
 
   .\32xl\:cursor-auto {

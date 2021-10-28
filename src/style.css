@@ -48,7 +48,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 241px;
+    height: 260px;
     transform: rotateY(180deg);
 }
 
@@ -60,6 +60,6 @@
 @media (max-width: 767px) {
     .custom-shape-divider-bottom-1635360107 svg {
         width: calc(100% + 1.3px);
-        height: 187px;
+        height: 200px;
     }
 }
